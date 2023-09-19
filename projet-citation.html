@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Math.random ()</title>
+        <style>
+          body {
+              background-color: bisque;
+              padding: 2px;
+              text-align: center;
+          }
+        </style>
+    <p>Générateur donnons nous des citations aléatoires</p>
+    <img src="photo.jpg" alt="image" width="30%" height="50%">
+    <br>
+    <br>
+ <button onclick="idi()">Générer un citation aléatoire</button>
+    <p id="demo"></p>
+</head>
+<body>
+    
+  <script>
+    var citation = [
+          "La lecture est importante.Si vous avez lire,  alors le monde entier s'ouvre à vous.",
+          "La position dans laquelle vous vous trouvez actuellement ne nétermine pas là où vous finirez.",
+"Vous ne pouvez laisser vos échecs vous définir. Vous devez faire en sorte que vos échecs vous enseignent.",
+"L'humanité est parvenue à identifier des galaxies  qui sont à des milliards d'années -lumière d'ici,  à étudier des particules bien plus petites qu'un atome,mais elle n'a toujours pas élucidé le mystère de ce kilo et demide matière qui se trouve entre nod deux oreilles.",
+"L'Afrique n'a pas besoin des hommes forts mais des institutions fortes.",
+"Si j'ai décidé de me présenter à cette élection présidentielle, c'est que j'ai compris que je ne pourrai jamais être Bruce Springsteen!"
+// "Vous avez la capacité et les dons pour faire tout ce que vous voulez. C'est de votre tour maintenant de changer le monde, oui, nous pouvons le faire.",
+// "Tu as une chance d'y arriver, si tu n'essaies pas, tu as as déja perdu.",
+//  "Ne l'appelez pas un rêve appelez un plan.",
+// "L'astuce c'est de ne pas faire attention quand ça fait mal.",
+     
+   ];
+    function idi() {
+        var randomIndex = Math.floor(Math.random() * citation.length);
+        var randomCitation = citation [randomIndex];
+        document.getElementById("demo").innerHTML =  randomCitation + " <br>"  + " <br>"  + " <br>"  +  "Le Président brack Obama";
+    }
+  </script>  
+</body>
+</html>
+
+
+   
